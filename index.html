@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .navbar-link:hover{
+        background-color: red;
+      }
+
+      
+button:hover{
+  
+  transition: all 0.1s 0.1s linear;
+  transform: scale(1,2);
+}
+.card:hover{
+  transition: all 0.1s 0.1s linear;
+  transform: scale(2,2);
+}
+
+
+figure{
+    padding-top: 20vh;
+    text-align:center;
+}
+.heading h1:nth-child(2){
+color: orange;
+font-size: 50px;
+margin:10px 0
+}
+.heading button:nth-child(1){
+    background-color: black;
+}
+.heading button{
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 30px;
+    color:white;
+    border:none;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+  
+  <section>
+    <div class="navigation">
+        <div class="row container-fluid">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid col-md-6">
+                <div class="innernav d-none d-md-block container-fluid col-12  col-lg-12" style="word-spacing: 50px;">
+                  <a class="navbar-link" href="#header">Home</a>
+                <a class="navbar-link" href="#header1">About</a>
+              <a class="navbar-link" href="#team">Search</a>
+              <a class="navbar-link" href="#table">Link</a>
+                <a class="navbar-link" href="#footer">Servers</a>
+                </div>
+            
+              <button class="d-md-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                    <li class="nav-item">
+                      <a class="navbar-link" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#table">Link</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                      </li>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
+
+
+<section>
+  <div class="h">
+    <div class="row">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://s.yimg.com/uu/api/res/1.2/6tptIDiKpIIxEsSAHTrwJw--~B/aD0xMTAyO3c9MTk2MDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/techcrunch_350/da422d6fcb5de1bb7721c4bd56e8367d" class="d-block w-100" alt="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.MOcfaj0mdHeSJ6VI-G4FJwHaMK?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." style="height: 500px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443398cv11d.jpg" class="d-block w-100" alt="..." style="height: 500px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="header1">
+        <div class=" py-5"><h1 style="text-align: center;color:orange;">Special Mobile Phones</h1><br><br>
+            <div class="row col-6 mx-auto col-md-12"><br><br>
+                <div class="card-group"><br><br>
+                    <div class="card">
+                      <img src="https://d28i4xct2kl5lp.cloudfront.net/product_images/75343_e50d1093-267c-49e6-8c48-fc26f0841649.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Mobile title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">View More See</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://d28i4xct2kl5lp.cloudfront.net/product_images/75343_e50d1093-267c-49e6-8c48-fc26f0841649.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Mobile title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">View More See</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://d28i4xct2kl5lp.cloudfront.net/product_images/75343_e50d1093-267c-49e6-8c48-fc26f0841649.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Mobile title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-primery">View More See</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="img">
+            <div class="row">
+                <div class="card3 text-bg-dark">
+                    <img src="https://3.bp.blogspot.com/-6lUW5UfHAlw/TbUCZgEF2DI/AAAAAAAABKY/-2mYZuhNXJc/s1600/designedbyitem_610x427.png" class="card-img" alt="..." style="width: 100%;">
+                    <div class="card3-img-overlay" style="text-align: center;">
+                      <h1 class="card3-title">About Mobile Phones</h1>
+                      <p class="card3-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card3-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="client pt-5" data-aos="" data-aos-delay="500">
+      <h1 style="text-align: center;">Structer Of Mobiles</h1>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="client_card">
+                <img src="./images/avtar-01.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dicta aliquam assumenda similique commodi non, facilis repudiandae incidunt optio? Itaque vitae asperiores nam. Illum dicta, neque autem odit minus cum!</p>
+                <h5>Lorem ipsum dolor sit.</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2>About Mobile Phones</h2>
+              <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis accusamus nisi vitae. Repellat, error? Dolor quod autem tenetur saepe.</p>
+              <p  class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dignissimos velit. Mollitia laboriosam eos, qui optio recusandae perferendis inventore esse, obcaecati error, ea rerum quisquam.</p>
+              <button style="border: none; background-color: orange;border-radius: 10px;height: 40px; width: 120px;">View All</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+
+  <figure>
+    <div class="heading">
+        <h1>Online Booking Apply Here</h1>
+        <h1>20000 Rs Per Phone Discount</h1>
+        <div><br>
+            <button>Booking</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>Cancel</button>
+        </div>
+    </div>
+  </figure>
+
+
+      
+
+      <section class="team bg-light  py-5" id="team" data-aos="" data-aos-delay="500">
+        <div class="container-fluid  py-5">
+          <div class="heading">
+            <h1 style="text-align: center;color:orange">Different Types of Phone</h1><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus qui optio neque et, eaque facere quasi similique fugit dolores nesciunt voluptas cumque, nobis necessitatibus ex repudiandae tempore distinctio officia veniam!</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.KxqOKddGsgzRRV99JkVCEAHaHa?rs=1&pid=ImgDetMain" alt="">
+                    <h1 class="pt-3" style="display: flex; align-items: center;justify-content: center;flex-wrap: wrap;color:orange">Iphone 12</h1>
+                    <p style="display: flex; align-items: center;justify-content: center;flex-wrap: wrap;">Model xl Pro</p>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://petapixel.com/assets/uploads/2018/09/iphonexrheadddd.jpg" alt="" style="height: 275px;">
+                    <h1 class="pt-5" style="display: flex; align-items: center;justify-content: center;flex-wrap: wrap;color:orange">Iphone 13</h1>
+                    <p style="display: flex; align-items: center;justify-content: center;flex-wrap: wrap;">Model xl Pro</p>
+                </div>      
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://media.ldlc.com/ld/products/00/05/44/00/LD0005440098_2_0005440176.jpg" alt="">
+                    <h1 class="pt-3" style="display: flex; align-items: center;justify-content: center;flex-wrap:wrap;color:orange;">Iphone 14</h1>
+                    <p style="display: flex; align-items: center;justify-content: center;flex-wrap: wrap;">Model xl Pro</p>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </section> 
+
+      <section id="cont">
+        <div class="container-fluid">
+            <div class="row">
+                
+      
+      <section class="startProject bg-dark text-white py-5" data-aos="" data-aos-delay="500">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>Some Selected Mobile .</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-6">
+              <button style="margin-top: 20px; height: 40px; width: 120px;border: none;border-radius: 10px;">start Order</button>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <button style="height: 40px; width: 120px; border-radius: 10px; border: none;">Cancel Order</button>
+            </div>
+          </div>
+        </div>
+      </section>
+            </div>
+        </div>
+      </section>
+
+
+
+      
+<div class="container-fluid">
+  <h2 class="mt-3 mb-5 text-center" style="color:orange;">About Iphone And Discount</h2>
+  <div class="row">
+    <div class="col-md-3 bg-white border-radious:10px" style="border: 1px solid black;"><br>
+      <h3 class="text-orange">About Iphone 12</h3><br>
+      <p style="line-height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas tempora doloribus ratione dicta architecto quasi voluptatem doloremque maxime, saepe ad dolorem autem obcaecati consequatur nulla expedita officia molestias eos!</p>
+    </div>
+
+    <div class="col-md-3 bg-white text-red" style="border: 1px solid black;"><br>
+      <h3 class="text-black">About Iphone 13</h3><br>
+      <p style="line-height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas tempora doloribus ratione dicta architecto quasi voluptatem doloremque maxime, saepe ad dolorem autem obcaecati consequatur nulla expedita officia molestias eos!</p>
+    </div>
+    
+    <div class="col-md-3 bg-white"style="border: 1px solid black;"><br>
+      <h3 class="text-dark">About Iphone 14</h3><br>
+      <p class="text-gray"style="line-height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas tempora doloribus ratione dicta architecto quasi voluptatem doloremque maxime, saepe ad dolorem autem obcaecati consequatur nulla expedita officia molestias eos!</p>
+    </div>
+          
+    <div class="col-md-3 bg-white"style="border: 1px solid black;"><br>
+      <h3 class="text-dark">About Iphone 15</h3><br>
+      <p style="line-height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas tempora doloribus ratione dicta architecto quasi voluptatem doloremque maxime, saepe ad dolorem autem obcaecati consequatur nulla expedita officia molestias eos!</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+      <section id="h">
+        <div class="card1 py-5">
+          <div class="row container-fluid">
+            <div class="card1 text-center">
+              <div class="card1-header">
+                <h1>Feature</h1>
+              </div>
+              <div class="card1-body">
+                <h5 class="card1-title">Special Mobile Here</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Few Days Ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      
+    <section id="table">
+      <div class="table container-fluid">
+        <div class="row mx-auto">
+        <h1 style="text-align: center;color:orange;">Table </h1>
+          <div class="row py-5">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Mobile</th>
+                      <th scope="col">Model</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Iphone</td>
+                      <td>Xl pro 12</td>
+                      <td>46,900</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Iphone</td>
+                      <td>Xl pro 13</td>
+                      <td>54,300</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Iphone</td>
+                      <td>129,900</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+  <section id="form">
+      <div class="form container-fluid">
+        <h1 style="text-align: center;color:orange;">Registration Here</h1>
+          <div class="row col-md-12 mx-auto p-5">
+              <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <div style="margin-left: 400px;">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+          </div>
+      </div>
+  </section><br><br>
+
+
+
+      <div class="list-group py-5">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h2 class="mb-1">Group Of Mobile IPhones</h2>
+            <small>View More</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small>And some small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h2 class="mb-1"> Group Of Mobile IPhones</h2>
+            <small class="text-body-secondary">View More</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-body-secondary">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h2 class="mb-1"> Group Of Mobile IPhones</h2>
+            <small class="text-body-secondary">View More</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-body-secondary">And some muted small print.</small>
+        </a>
+      </div>
+
+
+
+
+      
+  <section id="footer">
+    <div class="footer container-fluid">
+      <div class="row mx-auto py-5">
+        
+  <div class="col-lg-4 mx-auto">
+    <div class="icons" style="display: flex;flex-direction: row;flex-wrap: wrap;">
+      <p style="text-align: center;color:orange;">@ Copy All Right recevied,company 9001:2000;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
