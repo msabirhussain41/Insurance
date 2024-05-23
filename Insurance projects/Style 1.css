@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.na{
+    height: 50px;width: 100%; background:gray;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;;
+}
+div li{
+    float: left;
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.box{
+    height: 40px;width: 130px; background-color:white;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;padding-top: 20px;
+}
+.box1{
+    height: 250px;width: 200px; background-color:white;margin-top:20 px;line-height: 20px;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;z-index:2;padding-left: 20px;
+    display:none;
+}
+.box:hover .box1{
+    display: block;
+}
+.left{
+    height: 380px;width: 400px;background-color: aqua;
+}
+
+.right{
+    height: 380px;width: 400px;background-color: white;
+}
+.box2{
+    height: 250px; width: 230px; background-color: transparent;
+    display: flex;align-items: center;justify-content: center;flex-wrap: wrap;border-radius: 50%;border: 1px solid black;
+}
+@keyframes ani{
+    0%{
+        transform: translate(600px);
+    }
+}
+.icon{
+    transform: translate(0px);
+
+}
+.icon:hover{
+transition: all 2s;
+transform: translate(-10px);
+}
+.fall:hover{
+    border: 1px solid black;
+}
+.card-body:hover{
+    border: 1px solid black;
+    background-color: none;
+}
+
+
